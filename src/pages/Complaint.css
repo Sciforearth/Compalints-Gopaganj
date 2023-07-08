@@ -1,0 +1,27 @@
+.image-viewer {
+    /* height: 70vh; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .custom-image {
+    /* width: "70%"; */
+    /* height: 70%; */
+    width: 50%;
+  }
+  .image-viewer img {
+    height: 80%;
+  }
+
+  @media (max-width: 768px) {
+    .custom-image {
+      width: 80%;
+    }
+  }
+
+  @media (max-width: 426px) {
+    .custom-image {
+      width: 60%;
+    }
+  }
