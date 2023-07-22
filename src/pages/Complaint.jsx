@@ -13,7 +13,7 @@ function Complaint() {
   useEffect(() => {
     const fetchComplaintData = async () => {
       try {
-        const url = `https://ap-south-1.aws.data.mongodb-api.com/app/gopalganj-userside-bzzzc/endpoint/getMyPost?secret=123456&id=${id}`;
+        const url = `https://ap-south-1.aws.data.mongodb-api.com/app/gopalganj-userside-vbiim/endpoint/getMyPost?secret=123456&id=${id}`;
         const res = await axios.post(url);
         console.log("complaint api response", res.data);
 
