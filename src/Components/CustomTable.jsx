@@ -14,6 +14,7 @@ const StyledTableCell = styled(TableCell)(({ theme }) => ({
   },
   [`&.${tableCellClasses.body}`]: {
     fontSize: 14,
+    width: "200px",
   },
 }));
 
@@ -35,6 +36,9 @@ export default function CustomTable({ rows }) {
         <TableHead>
           <TableRow>
             <StyledTableCell align="center">Address</StyledTableCell>
+            {/* <StyledDescriptionCell align="center">
+              Description
+            </StyledDescriptionCell> */}
             <StyledTableCell align="center">Attending</StyledTableCell>
             <StyledTableCell align="center">Contact</StyledTableCell>
             <StyledTableCell align="center">Date Reported</StyledTableCell>
@@ -48,6 +52,9 @@ export default function CustomTable({ rows }) {
               <StyledTableCell align="center">
                 {row.address ? row.address : "NA"}
               </StyledTableCell>
+              {/* <StyledDescriptionCell align="center">
+                {row.description ? row.description : "NA"}
+              </StyledDescriptionCell> */}
               <StyledTableCell align="center">
                 {row.attending ? row.attending : "NA"}
               </StyledTableCell>
